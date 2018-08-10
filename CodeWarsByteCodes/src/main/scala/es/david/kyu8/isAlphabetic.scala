@@ -1,4 +1,4 @@
-package es.david
+package es.david.kyu8
 
 /**
   * Your task is very simple. Just write a function isAlphabetic(s), which takes an input string s in lowercase and returns true/false depending on whether the string is in alphabetical order or not.
