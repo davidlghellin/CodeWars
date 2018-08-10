@@ -1,0 +1,11 @@
+*/target/*
+*/project/target/*
+*.class
+*.jar
+*.log
+**./idea/
+
+
+# IntelliJ
+out/
+.idea
