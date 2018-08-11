@@ -10,4 +10,7 @@ object LoveVsFriendship {
 
     arrayNum.reduce(_ + _)
   }
+
+  //def loveVsFriendship(s: String): Int = s.toCharArray.map(c => c.toInt - 96).sum
+  //def loveVsFriendship(s: String) = s.map(_ - 'a' + 1).sum
 }
