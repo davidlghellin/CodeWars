@@ -9,3 +9,6 @@
 # IntelliJ
 out/
 .idea
+
+# python
+venv/
