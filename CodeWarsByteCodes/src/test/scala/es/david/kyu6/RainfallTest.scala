@@ -8,6 +8,14 @@ class RainfallTest extends FlatSpec with Matchers {
     Rainfall.mean("London", data) should equal(51.199999999999996 +- 1e-2)
   }
 
+  "Rain.mean.Hellin" should "pass fixed tests with data" in {
+    Rainfall.mean("Hellin", data) should equal(-1.0 +- 1e-2)
+  }
+
+  "Rain.mean.Albacete" should "pass fixed tests with data" in {
+    Rainfall.mean("Hellin", data) should equal(-1.0 +- 1e-2)
+  }
+
   "Rain.variance" should "pass fixed tests with data" in {
     Rainfall.variance("London", data) should equal(57.42833333333374 +- 1e-2)
   }
@@ -33,7 +41,11 @@ object RainfallTest {
     "\n" +
     "Beijing:Jan 3.9,Feb 4.7,Mar 8.2,Apr 18.4,May 33.0,Jun 78.1,Jul 224.3,Aug 170.0,Sep 58.4,Oct 18.0,Nov 9.3,Dec 2.7" +
     "\n" +
-    "Lima:Jan 1.2,Feb 0.9,Mar 0.7,Apr 0.4,May 0.6,Jun 1.8,Jul 4.4,Aug 3.1,Sep 3.3,Oct 1.7,Nov 0.5,Dec 0.7"
+    "Lima:Jan 1.2,Feb 0.9,Mar 0.7,Apr 0.4,May 0.6,Jun 1.8,Jul 4.4,Aug 3.1,Sep 3.3,Oct 1.7,Nov 0.5,Dec 0.7"+
+    "\n" +
+    "Hellin:"+
+    "\n" +
+    "Albacete:Jan 1.2,Feb 0.9"
 
   var data1: String = "Rome:Jan 90.2,Feb 73.2,Mar 80.3,Apr 55.7,May 53.0,Jun 36.4,Jul 17.5,Aug 27.5,Sep 60.9,Oct 147.7,Nov 121.0,Dec 97.9" +
     "\n" +
