@@ -11,18 +11,24 @@ object UnluckyDays {
 
     val unlucky: Int = 13
 
-    import java.util.Calendar
 
+    val nMeses13: Array[Boolean] = meses.map(x => comprobarViernes13(setCalendar(year, x)))
+    nMeses13.count(x => x)
+
+  }
+
+  def setCalendar(year: Int, mes: Int): Calendar = {
     val cal = Calendar.getInstance
     cal.set(Calendar.YEAR, year)
-    cal.set(Calendar.DAY_OF_MONTH, unlucky)
-    cal.set(Calendar.MONTH, 7)
+    cal.set(Calendar.DAY_OF_MONTH, 13)
+    cal.set(Calendar.MONTH, mes)
+    cal
+  }
 
-
-    import java.util.Calendar
-    if (cal.get(Calendar.DAY_OF_WEEK) eq Calendar.SUNDAY)
-      System.out.println("Sunday!")
-
-    return 0
+  def comprobarViernes13(calendar: Calendar): Boolean = {
+    if (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY)
+      true
+    else
+      false
   }
 }
