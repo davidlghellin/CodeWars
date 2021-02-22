@@ -13,3 +13,5 @@ out/
 # python
 venv/
 .pytest_cache
+
+.DS_Store

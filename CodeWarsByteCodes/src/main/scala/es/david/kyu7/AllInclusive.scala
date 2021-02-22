@@ -1,8 +1,13 @@
 package es.david.kyu7
 
-object Rotations {
-  //https://www.codewars.com/kata/all-inclusive/train/scala
+//https://www.codewars.com/kata/all-inclusive/train/scala
+object AllInclusive {
   def containAllRots(strng: String, arr: List[String]): java.lang.Boolean = {
-    arr.contains(strng)
+    println ("---")
+    println(strng.reverse)
+    println(strng)
+    println ("---")
+    arr.foreach(println )
+    arr.contains(strng.reverse)
   }
 }
